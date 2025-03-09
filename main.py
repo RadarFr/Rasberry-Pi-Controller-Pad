@@ -27,7 +27,7 @@ while True:
 
     prev_pressed = keys[4].pressed
 
-    # Fix key 0 press detection
+    # Fix key 0 press detection alonf with 1 and 5
     if keys[0].pressed:
         keys[0].set_led(250, 0, 0)
         cc.send(ConsumerControlCode.VOLUME_INCREMENT)
